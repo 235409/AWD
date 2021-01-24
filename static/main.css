@@ -1,0 +1,75 @@
+body {
+  background: #DBB98F;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.bg-steel {
+  background-color: #96351E;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #e0a96d;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #e0a96d;
+}
+
+.jumbotron {
+  background: rgba(150, 53, 30, 0.5); ;
+}
+
+.jumbotron h1{
+    color: #96351E;
+}
+
+.jumbotron p{
+    color: #DBB98F;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.btn{
+    background-color: #96351E;
+} .btn:hover{
+  background: #DBB98F;
+  }
+
+.btn:active, .btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.img-fluid {
+    width: 500px; /* You can set the dimensions to whatever you want */
+    height: 500px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+.elo {
+    background: #96351E;
+}
+
+.display-4 {
+    color: #e0a96d;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.display-5 {
+    color: #e0a96d;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+

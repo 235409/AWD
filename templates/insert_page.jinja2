@@ -1,0 +1,27 @@
+{% extends "base_template.jinja2" %}
+{% block title %}Identyfikuj{% endblock %}
+{% block content %}
+    <form method="POST" action="" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <div class="jumbotron">
+            <h1 class="display-4">Identifikuj swoje grzybne znalezisko!</h1>
+            <p class="lead">Dzięki naszej sieci neuronewej dowiesz się czy jakim gatunkiem jest znaleziony
+                przez Ciebie grzyb</p>
+            <hr class="my-4">
+            <p>Załaduj zdjęcie by rozpocząć proces identyfikacji</p>
+            <p class="lead">
+            <div class="form-group">
+                {{ form.picture(class="form-control-file") }}
+                {% if form.picture.errors %}
+                    {% for error in form.picture.errors %}
+                        <span class="text-danger">{{ error }}</span></br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-primary btn-lg btn-block") }}
+            </div>
+            </p>
+        </div>
+    </form>
+{% endblock %}
